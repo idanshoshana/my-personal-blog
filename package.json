@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "my-personal-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Idan Shoshana's blog powered by Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Idan Shoshana <idan17994@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -46,7 +46,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/idanshoshana/my-personal-blog.git"
   },
   "scripts": {
     "build": "gatsby build",
