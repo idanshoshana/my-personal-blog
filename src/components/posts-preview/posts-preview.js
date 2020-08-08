@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./posts-preview.module.css"
 import PostPreview from "../post-preview/post-preview"
-// import { rhythm } from "../utils/typography"
 
 const PostsPreview = () => {
   const data = useStaticQuery(graphql`

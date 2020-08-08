@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { rhythm, scale } from "../../utils/typography"
 import styles from "./layout.module.css"
 
 const Layout = ({ location, title, children }) => {
@@ -9,13 +8,7 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 30,
-        }}
-      >
+      <h1 className={styles.rootPageHeader}>
         <Link className={styles.headerLink} to={`/`}>
           {title}
         </Link>
@@ -23,11 +16,7 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <h3
-        style={{
-          marginTop: 10,
-        }}
-      >
+      <h3 className={styles.pageHeader}>
         <Link className={styles.headerLink} to={`/`}>
           {title}
         </Link>

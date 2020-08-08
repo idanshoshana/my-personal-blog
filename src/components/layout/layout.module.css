@@ -5,6 +5,15 @@
   margin: auto;
 }
 
+.rootPageHeader {
+  font-size: 3.5rem;
+  margin: 30px 0;
+}
+
+.pageHeader {
+    margin-top: 10px;
+}
+
 .headerLink {
   box-shadow: none;
   color: inherit;
