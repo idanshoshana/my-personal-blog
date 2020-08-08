@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  height: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.headerLink {
+  box-shadow: none;
+  color: inherit;
+}

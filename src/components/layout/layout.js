@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from "../../utils/typography"
+import styles from "./layout.module.css"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -13,16 +13,10 @@ const Layout = ({ location, title, children }) => {
         style={{
           ...scale(1.5),
           marginBottom: rhythm(1.5),
-          marginTop: 0,
+          marginTop: 30,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
+        <Link className={styles.headerLink} to={`/`}>
           {title}
         </Link>
       </h1>
@@ -31,32 +25,18 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
+          marginTop: 10,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
+        <Link className={styles.headerLink} to={`/`}>
           {title}
         </Link>
       </h3>
     )
   }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
-      <header>{header}</header>
+    <div className={styles.container}>
+      <header className={styles.headerSection}>{header}</header>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
