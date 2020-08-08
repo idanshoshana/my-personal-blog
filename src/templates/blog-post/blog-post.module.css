@@ -1,0 +1,29 @@
+.container {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.mainTitle {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.publishDate {
+  font-size: 0.8rem;
+  margin-bottom: 20;
+}
+
+.divider {
+    background-color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.pagesNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}

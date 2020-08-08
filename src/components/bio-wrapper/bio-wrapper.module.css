@@ -1,0 +1,46 @@
+.container {
+  background-color: var(--secondary-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px 5px 0 0;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.topWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 20px;
+}
+
+.dotWrapper {
+  display: flex;
+  padding: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.redDot {
+  composes: dot;
+  background-color: #fc6058;
+}
+
+.yellowDot {
+  composes: dot;
+  background-color: #fec02f;
+}
+
+.greenDot {
+  composes: dot;
+  background-color: #2aca3e;
+}

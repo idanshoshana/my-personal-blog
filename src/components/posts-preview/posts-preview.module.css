@@ -1,0 +1,25 @@
+.container {
+  max-width: 80%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: auto;
+  padding: 4px;
+}
+
+.postsContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.newPostsTitle {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newPostsTitle > * {
+    margin: 0 5px;
+}
