@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./posts-preview.module.css"
 import PostPreview from "../post-preview/post-preview"
+import { MdNewReleases } from "react-icons/md"
 
 const PostsPreview = () => {
   const data = useStaticQuery(graphql`
@@ -40,9 +41,12 @@ const PostsPreview = () => {
 
   return (
     <div className={styles.container}>
-      {posts.map(({ node }) => (
-        <PostPreview key={node.fields.slug} node={node} />
-      ))}
+      <h2 className={styles.newPostsTitle}>New Posts <MdNewReleases /></h2>
+      <div className={styles.postsContainer}>
+        {posts.map(({ node }) => (
+          <PostPreview key={node.fields.slug} node={node} />
+        ))}
+      </div>
     </div>
   )
 }

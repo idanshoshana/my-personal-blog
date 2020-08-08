@@ -27,7 +27,7 @@ const Layout = ({ location, title, children }) => {
     <div className={styles.container}>
       <header className={styles.headerSection}>{header}</header>
       <main>{children}</main>
-      <footer>
+      <footer className={styles.footerSection}>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
