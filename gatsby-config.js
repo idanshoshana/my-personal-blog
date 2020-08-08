@@ -3,12 +3,15 @@ module.exports = {
     title: `I'm Idan Shoshana`,
     author: {
       name: `Idan Shoshana`,
-      summary: `I'm a Software engineer with a focus on the web world!`,
+      summary: `I'm a Software engineer with a lot of passion!\n In this blog I've been sharing my knowledge and my experience.`,
     },
     description: `My personal site`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: '',
+      github: "idanshoshana",
+      dev: "idanshoshana",
+      twitter: "ShoshanaIdan",
+      medium: "@idanshoshana"
     },
   },
   plugins: [
@@ -66,7 +69,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/is-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
