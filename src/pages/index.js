@@ -4,7 +4,6 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import BioWrapper from "../components/bio-wrapper/bio-wrapper"
 import PostsPreview from "../components/posts-preview/posts-preview"
-// import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
