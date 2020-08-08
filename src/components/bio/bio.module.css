@@ -2,5 +2,24 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px;
+}
+
+.container > * {
+    margin: 10px;
+}
+
+.bioContent {
+    max-width: 600px;
+    text-align: left;
+}
+
+.linksWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.iconButton {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 10px;
 }

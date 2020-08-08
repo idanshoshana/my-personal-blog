@@ -8,6 +8,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { AiFillGithub, AiOutlineMedium, AiOutlineTwitter } from "react-icons/ai"
+import { FaDev } from "react-icons/fa"
 
 import styles from "./bio.module.css"
 
@@ -29,6 +31,9 @@ const Bio = () => {
           }
           social {
             twitter
+            dev
+            github
+            medium
           }
         }
       }
@@ -36,6 +41,7 @@ const Bio = () => {
   `)
 
   const { author } = data.site.siteMetadata
+  const { github, dev, twitter, medium } = data.site.siteMetadata.social
   return (
     <div className={styles.container}>
       <Image
@@ -45,7 +51,23 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>{author.summary}</p>
+      <div className={styles.bioContent}>
+        <p className={styles.description}>{author.summary}</p>
+        <div className={styles.linksWrapper}>
+          <a className={styles.iconButton} href={`https://github.com/${github}`}>
+            <AiFillGithub />
+          </a>
+          <a className={styles.iconButton} href={`https://medium.com/${medium}`}>
+            <AiOutlineMedium />
+          </a>
+          <a className={styles.iconButton} href={`https://dev.to/${dev}`}>
+            <FaDev />
+          </a>
+          <a className={styles.iconButton} href={`https://twitter.com/${twitter}`}>
+            <AiOutlineTwitter />
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
