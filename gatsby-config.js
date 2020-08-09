@@ -5,8 +5,8 @@ module.exports = {
       name: `Idan Shoshana`,
       summary: `I'm a Software engineer with a lot of passion!\n In this blog I've been sharing my knowledge and my experience.`,
     },
-    description: `My personal site`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Idan Shoshana's Site`,
+    siteUrl: `https://idanshoshana.me/`,
     social: {
       github: "idanshoshana",
       dev: "idanshoshana",
@@ -63,13 +63,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Idan Shoshana`,
+        short_name: `Idan Shoshana`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/is-icon.png`,
+        icon: `content/assets/is-icon.png`
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -79,8 +79,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
