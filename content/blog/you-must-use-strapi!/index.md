@@ -1,5 +1,5 @@
 ---
-title: You must use Strapi!
+title: You should use Strapi!
 date: "2020-08-17T22:40:32.169Z"
 description: I'm very passionate about Strapi! It helps me to push my team towards being more professional. Every person who saw the connection between Strapi and our application was amazed! I stopped counting how much times a person from another team came to see it.
 featuredImage: ../../assets/strapi.png
