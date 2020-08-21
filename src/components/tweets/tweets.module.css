@@ -1,0 +1,23 @@
+.container {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: auto;
+  padding: 4px;
+}
+
+.tweetsContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.tweetsTitle {
+  margin: 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.tweet {
+    width: 250px;
+}
