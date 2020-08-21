@@ -4,6 +4,8 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import BioWrapper from "../components/bio-wrapper/bio-wrapper"
 import PostsPreview from "../components/posts-preview/posts-preview"
+import Tweets from "../components/tweets/tweets"
+import styles from "./index.module.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -11,8 +13,11 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <BioWrapper />
-      <PostsPreview />
+      <div className={styles.container}>
+        <div className={styles.bio}><BioWrapper  /></div>
+        <div className={styles.posts} ><PostsPreview /></div>
+        <div className={styles.tweets}><Tweets /></div>
+      </div>
     </Layout>
   )
 }
