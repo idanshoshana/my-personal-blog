@@ -10,7 +10,7 @@ module.exports = {
     social: {
       github: "idanshoshana",
       dev: "idanshoshana",
-      twitter: "ShoshanaIdan",
+      twitter: "idan_shoshana",
       medium: "@idanshoshana"
     },
   },
