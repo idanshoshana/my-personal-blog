@@ -11,7 +11,7 @@ module.exports = {
       github: "idanshoshana",
       dev: "idanshoshana",
       twitter: "idan_shoshana",
-      medium: "@idanshoshana"
+      medium: "@idanshoshana",
     },
   },
   plugins: [
@@ -69,7 +69,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/is-icon.png`
+        icon: `content/assets/is-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -80,6 +80,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-twitter`
+    `gatsby-plugin-twitter`,
   ],
-}
+};

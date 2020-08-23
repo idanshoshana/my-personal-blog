@@ -1,17 +1,14 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
+import {
+  AiFillGithub,
+  AiOutlineMedium,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { FaDev } from "react-icons/fa";
 
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-import { AiFillGithub, AiOutlineMedium, AiOutlineTwitter } from "react-icons/ai"
-import { FaDev } from "react-icons/fa"
-
-import styles from "./bio.module.css"
+import styles from "./bio.module.css";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -38,10 +35,10 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
+  const { author } = data.site.siteMetadata;
+  const { github, dev, twitter, medium } = data.site.siteMetadata.social;
 
-  const { author } = data.site.siteMetadata
-  const { github, dev, twitter, medium } = data.site.siteMetadata.social
   return (
     <div className={styles.container}>
       <Image
@@ -54,22 +51,31 @@ const Bio = () => {
       <div className={styles.bioContent}>
         <p className={styles.description}>{author.summary}</p>
         <div className={styles.linksWrapper}>
-          <a className={styles.iconButton} href={`https://github.com/${github}`}>
+          <a
+            className={styles.iconButton}
+            href={`https://github.com/${github}`}
+          >
             <AiFillGithub />
           </a>
-          <a className={styles.iconButton} href={`https://medium.com/${medium}`}>
+          <a
+            className={styles.iconButton}
+            href={`https://medium.com/${medium}`}
+          >
             <AiOutlineMedium />
           </a>
           <a className={styles.iconButton} href={`https://dev.to/${dev}`}>
             <FaDev />
           </a>
-          <a className={styles.iconButton} href={`https://twitter.com/${twitter}`}>
+          <a
+            className={styles.iconButton}
+            href={`https://twitter.com/${twitter}`}
+          >
             <AiOutlineTwitter />
           </a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

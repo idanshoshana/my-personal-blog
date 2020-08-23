@@ -1,6 +1,6 @@
-import React from "react"
-import styles from "./tweets.module.css"
-import { FiTwitter } from "react-icons/fi"
+import React from "react";
+import styles from "./tweets.module.css";
+import { FiTwitter } from "react-icons/fi";
 
 const Tweets = () => {
   return (
@@ -16,7 +16,7 @@ const Tweets = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Tweets
+export default Tweets;

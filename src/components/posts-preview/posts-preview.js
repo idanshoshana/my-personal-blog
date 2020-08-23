@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import styles from "./posts-preview.module.css"
-import PostPreview from "../post-preview/post-preview"
-import { MdNewReleases } from "react-icons/md"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import styles from "./posts-preview.module.css";
+import PostPreview from "../post-preview/post-preview";
+import { MdNewReleases } from "react-icons/md";
 
 const PostsPreview = () => {
   const data = useStaticQuery(graphql`
@@ -35,20 +35,21 @@ const PostsPreview = () => {
         }
       }
     }
-  `)
-
-  const posts = data.allMarkdownRemark.edges
+  `);
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.newPostsTitle}>New Posts <MdNewReleases /></h2>
+      <h2 className={styles.postsTitle}>
+        New Posts <MdNewReleases />
+      </h2>
       <div className={styles.postsContainer}>
         {posts.map(({ node }) => (
           <PostPreview key={node.fields.slug} node={node} />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PostsPreview
+export default PostsPreview;

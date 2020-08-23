@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
-import styles from "./post-preview.module.css"
+import React from "react";
+import { Link } from "gatsby";
+import Img from "gatsby-image";
+import styles from "./post-preview.module.css";
 
 const PostPreview = ({ node }) => {
   return (
@@ -31,7 +31,7 @@ const PostPreview = ({ node }) => {
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PostPreview
+export default PostPreview;

@@ -6,8 +6,7 @@
 }
 
 .mainTitle {
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin: 20px 0 0 0;
 }
 
 .publishDate {
@@ -16,8 +15,8 @@
 }
 
 .divider {
-    background-color: var(--text-color);
-    margin-bottom: 30px;
+  background-color: var(--text-color);
+  margin-bottom: 30px;
 }
 
 .pagesNavigation {

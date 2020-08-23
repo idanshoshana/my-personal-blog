@@ -1,28 +1,34 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout/layout"
-import SEO from "../components/seo/seo"
-import BioWrapper from "../components/bio-wrapper/bio-wrapper"
-import PostsPreview from "../components/posts-preview/posts-preview"
-import Tweets from "../components/tweets/tweets"
-import styles from "./index.module.css"
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo/seo";
+import BioWrapper from "../components/bio-wrapper/bio-wrapper";
+import PostsPreview from "../components/posts-preview/posts-preview";
+import Tweets from "../components/tweets/tweets";
+import styles from "./index.module.css";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <div className={styles.container}>
-        <div className={styles.bio}><BioWrapper  /></div>
-        <div className={styles.posts} ><PostsPreview /></div>
-        <div className={styles.tweets}><Tweets /></div>
+        <header className={styles.bio}>
+          <BioWrapper />
+        </header>
+        <section className={styles.posts}>
+          <PostsPreview />
+        </section>
+        <section className={styles.tweets}>
+          <Tweets />
+        </section>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -54,4 +60,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
