@@ -9,6 +9,9 @@ Each article comes with a story behind it.
 This project is built with [Gatsby](https://www.gatsbyjs.com/) using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/).
 I've customized this starter to bring my design.
 
+## Deploying
+I'm using [Gatsby Cloud](https://www.gatsbyjs.com/cloud/) for the fastest builds and for deploying to [Vercel](https://vercel.com/).
+
 ## Installation
 1. Clone this repo
 ```
