@@ -6,18 +6,18 @@ featuredImage: ../../assets/strapi.png
 ---
 
 I'm very passionate about [Strapi](https://strapi.io/)! It helps me to push my team towards being more professional. Every person who saw the connection between Strapi and our application was amazed! I stopped counting how many times a person from another team came to see it.
-So, If you want to be more professional, save time for yourself and for your product manager, this article is for you! 
+So, If you want to be more professional, save time for yourself and your product manager, this article is for you! 
 
 - In this article, I'm gonna talk about:
-  * What are CMS and Headless CMS
-  * What is Strapi
-  * My private story with Strapi
-  * Bootsrap Strapi
+  * **What are CMS and Headless CMS**
+  * **What is Strapi**
+  * **My private story with Strapi**
+  * **Bootstrap Strapi**
 
 ## What are CMS and Headless CMS
 
 Before we'll talk about Strapi, you need to know what [CMS](https://en.wikipedia.org/wiki/Content_management_system) (Content Management System) and [Headless CMS](https://en.wikipedia.org/wiki/Headless_content_management_system) are.
-Maybe you've already heard of [Wordpress](https://wordpress.com/), the traditional CMS. Wordpress allows us to update the content of our application in a nice UI, but there is a strong relation between our application and the interface that helps us update the content of the app. In fact, you need to build your app using Wordpress in order to enjoy the ability to change its content.
+Maybe you've already heard of [WordPress](https://wordpress.com/), the traditional CMS. WordPress allows us to update the content of our application in a nice UI, but there is a strong relation between our application and the interface that helps us update the content of the app. You need to build your app using WordPress to enjoy the ability to change its content.
 
 Headless CMS shows us another perspective we can adopt.
 From [headlesscms.org](https://headlesscms.org/about):
@@ -27,7 +27,7 @@ From [headlesscms.org](https://headlesscms.org/about):
 > Headless CMS' are opposite of legacy systems like Wordpress, Drupal, Joomla, etc. They are all CMS’ that traditionally have to be hosted and built together with the site every time it’s served.
 > **A headless CMS doesn’t care where it’s serving its content to. It’s no longer attached to the frontend, and the content can be viewed on any platform.**
 
-So as you can read, with Headless CMS I can hold another **decoupled** component that helps me edit my app content (of course with a nice UI) without coupling to my existing application. In order to receive the data from Headless CMS, I can send API requests from the frontend component of my application.
+So as you can read, with Headless CMS I can hold another **decoupled** component that helps me edit my app content (of course with a nice UI) without coupling to my existing application. To receive the data from Headless CMS, I can send API requests from the frontend component of my application.
 
 ## What is Strapi
 
@@ -37,7 +37,7 @@ From [Strapi Documentation](https://strapi.io/documentation/v3.x/getting-started
 
 > Strapi is a **flexible**, **open-source** Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
 
-You've noticed that Strapi is an implementation for Headless CMS. Why do I think Strapi is better than other implementations? Because after a research I've done I found Strapi is the best **open-source** option, has a **great community**, and is written in [Node.js](https://nodejs.org/) and [React](https://reactjs.org/) so you can custom it very easily. Strapi has a **great admin panel** that you can customize. You can consume the API from any client, mobile apps or even IoT, using **REST** or [GraphQL](https://graphql.org/). Strapi simplifies the **API generation** (we'll see it later), gives you the ability to allow or prevent access to your API. Strapi has built in Auth system, comes with **awesome plugins** you can connect to. Strapi can integrate with [MongoDB](https://www.mongodb.com/), [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/) and [SQLite](https://www.sqlite.org/) databases.
+You've noticed that Strapi is an implementation for Headless CMS. Why do I think Strapi is better than other implementations? Because after research I've done I found Strapi is the best **open-source** option, has a **great community**, and is written in [Node.js](https://nodejs.org/) and [React](https://reactjs.org/) so you can custom it very easily. Strapi has a **great admin panel** that you can customize. You can consume the API from any client, mobile apps, or even IoT, using **REST** or [GraphQL](https://graphql.org/). Strapi simplifies the **API generation** (we'll see it later), gives you the ability to allow or prevent access to your API. Strapi has built-in the Auth system, comes with **awesome plugins** you can connect to. Strapi can integrate with [MongoDB](https://www.mongodb.com/), [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), and [SQLite](https://www.sqlite.org/) databases.
 There are a lot of features you can read about!
 
 ## My Private Story With Strapi
@@ -46,29 +46,29 @@ A few months ago, my friend has told me about Strapi and he was very excited abo
 
 After a few months, I've gotten a new feature from my product manager:
 
-> "In our application we have two places I want to change often. 
-> The first is the **Updates** screen (usually after a new version) and the second is the **Help** screen. I'm tired of asking a developer to change the content in an "hard-coded" way! (requires to go inside the app's code, change the specific content and publish a new version!) I must have an interface to change those sections in a prefect way!"
+> "In our application, we have two places I want to change often. 
+> The first is the **Updates** screen (usually after a new version) and the second is the **Help** screen. I'm tired of asking a developer to change the content in a "hard-coded" way! (requires to go inside the app's code, change the specific content, and publish a new version!) I must have an interface to change those sections in a perfect way!"
 
-I really understood his need, and I've started to think about a perfect solution for him. First I asked him, if the feature could be in our existing app, a feature like Edit button for admin users, but He preferred an external application.
+I understood his need, and I've started to think about a perfect solution for him. First I asked him if the feature could be in our existing app, a feature like Edit button for admin users, but He preferred an external application.
 
-So, Should I build a new app from scratch? This app should include nice **UI**, **Server** and **Database**. I already did similar things in the past, but I've wanted to do the perfect solution in minimal time.
+So, Should I build a new app from scratch? This app should include a nice **UI**, **Server**, and **Database**. I already did similar things in the past, but I've wanted to do the perfect solution in minimal time.
 
-Before I started working on a new app, I remembered the concept of Headless CMS. It felt like a solution that could match. Yes, I remembered Strapi, but I did a research in order to find some alternatives (I want the best for my team!). After that research, I found Strapi is surely the best option for me (see Strapi's features in [What is Strapi](#what-is-strapi) section).
+Before I started working on a new app, I remembered the concept of Headless CMS. It felt like a solution that could match. Yes, I remembered Strapi, but I did a research to find some alternatives (I want the best for my team!). After that research, I found Strapi is surely the best option for me (see Strapi's features in **What is Strapi** section).
 
-I opened my computer ,installed Strapi via `create-strapi-app` (more instructions later...), logged in, added new resources, added some users, connected Strapi to MongoDB and did other things to make sure that Strapi is the best option.
+I opened my computer, installed Strapi via `create-strapi-app` (more instructions later...), logged in, added new resources, added some users, connected Strapi to MongoDB, and did other things to make sure that Strapi is the best option.
 
 Before I continue my story, let me show you Strapi!
 
-## Bootsrap Strapi
+## Bootstrap Strapi
 
 Open a cli and start typing: 
 ```powershell
 npx create-strapi-app my-dream-project --quickstart
 ```
 
-> You can omit `--quickstart` and fill some inputs, like the db type you want for example.
+> You can omit `--quickstart` and fill some inputs, like the DB type you want for example.
 
-Now, start a Starpi application using this command in your application folder:
+Now, start a Strapi application using this command in your application folder:
 ```powershell
 npm run develop
 ```
@@ -87,13 +87,13 @@ Click the `Content-Types Builder` button, and you'll get this screen:
 ![content-types-builder](https://dev-to-uploads.s3.amazonaws.com/i/15slpa0ovjhbxna9506m.png)
 
 Now you can create `Collection Type` and `Single Type`. 
-Think about it like that: `Collection Type` is for array with objects, and `Single Type` is for one object. For example, you might generate array of products (`Collection Type`), and Add/Remove/Update the objects inside the array all the time. When you want generate one object you can do it via (`Single Type`).
+Think about it like that: `Collection Type` is for an array with objects, and `Single Type` is for one object. For example, you might generate an array of products (`Collection Type`) and Add/Remove/Update the objects inside the array all the time. When you want to generate one object you can do it via (`Single Type`).
 
 Do you remember our Updates Screen? this screen consists of `title` and `content` components: 
  - `title` component - consists of only plain text.
- - `content` component - can consists of images, videos and designed text. It needs to support some features of a rich text editor.
+ - `content` component - can consists of images, videos, and designed text. It needs to support some features of a rich text editor.
 
-Let's create a proper object in Strapi in order to comsume its via REST and inject it into the Updates Screen component.
+Let's create a proper object in Strapi in order to consume it via REST and inject it into the Updates Screen component.
  
 Press on `Create new single type`, and fill a name:
 
@@ -115,7 +115,7 @@ Click the `Save` button, your server will restart and you'll find new files on y
 
 Awesome! now we want to be allowed to fetch this resource from our client.
 
-Go to `Roles & Permissions`, Click on the edit button in the Public section. Under Permission section, click on "find" checkbox:
+Go to `Roles & Permissions`, Click on the edit button in the Public section. Under the Permission section, click on "find" checkbox:
 
 ![permissions](https://dev-to-uploads.s3.amazonaws.com/i/z5ue9yhvxkybekzirsvb.png)
 
@@ -126,7 +126,7 @@ Then, press the `Save` button.
 Add your saved route to your base URL. The result should be:
 > http://localhost:1337/{YOUR_GENERATED_ROUTE}
 
-Go to this url and you will get your object as a JSON, for example:
+Go to this URL and you will get your object as a JSON, for example:
 ```json
 {
   "id": 1,
@@ -155,7 +155,7 @@ Wow, now you can fetch this resource from your application!
 For my case, as you can guess I've created two single types "UpdatesScreen" and "HelpScreen", with `title` and `content` fields for each of them. I've replaced the Strapi's rich text editor with [React-Quill](https://github.com/zenoamaro/react-quill), in order to generate HTML instead of MARKDOWN. This is a [nice article](https://strapi.io/blog/how-to-change-the-wysiwyg-in-strapi) that can be helpful for you.
 
 I've been sending requests to fetch some data from Strapi in my application, and the results are great.
-I bounce a popup (Updates Screen) for an app's user when he need to see new updates (usually after a new app's version). I added some frontend logic in order to check if a specific user already read the updates of specific app's version. When the product manager writes content for another app's version (via Strapi!), I know that any user on my app will get a new popup with new content!
+I bounce a popup (Updates Screen) for an app's user when he needs to see new updates (usually after a new app's version). I added some frontend logic in order to check if a specific user already read the updates of a specific app's version. When the product manager writes content for another app's version (via Strapi!), I know that any user on my app will get a new popup with new content!
 
 My clients see the data that comes from Strapi (They don't know 🤫)  and the product manager feels free to add new content without an effort of a developer!
 
