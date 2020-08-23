@@ -16,7 +16,7 @@
   }
 }
 
-.container > header, section {
+.container > * {
   margin: 15px;
 }
 
