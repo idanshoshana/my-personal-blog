@@ -62,3 +62,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     });
   }
 };
+
+exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+  const tweets = [
+    { codeBlock: '<blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">We like the title &quot;You should Use Strapi&quot; 😎<br><br>Here&#39;s why 👇🤘<a href="https://t.co/DsvzrC9Nxt">https://t.co/DsvzrC9Nxt</a> by <a href="https://twitter.com/ThePracticalDev?ref_src=twsrc%5Etfw">@thepracticaldev</a></p>&mdash; Strapi (@strapijs) <a href="https://twitter.com/strapijs/status/1296715050510684160?ref_src=twsrc%5Etfw">August 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'},
+    { codeBlock: '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">❤️ You Should Use Strapi by <a href="https://twitter.com/idan_shoshana?ref_src=twsrc%5Etfw">@idan_shoshana</a> . ⤵️<br> <a href="https://t.co/pwFGyGc03m">https://t.co/pwFGyGc03m</a></p>&mdash; Strapi (@strapijs) <a href="https://twitter.com/strapijs/status/1298045191555776513?ref_src=twsrc%5Etfw">August 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>' },
+  ]
+  tweets.forEach((tweet, index) => {
+    const node = {
+      codeBlock: tweet.codeBlock,
+      id: createNodeId(`Tweet-${index}`),
+      internal: {
+        type: "Tweet",
+        contentDigest: createContentDigest(tweet),
+      },
+    }
+    actions.createNode(node)
+  })
+}
