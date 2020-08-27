@@ -1,33 +1,10 @@
 .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas:
-    "header header"
-    "main sidebar";
-  width: 90%;
   margin: auto;
-}
-
-@media screen and (max-width: 768px) { 
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 93%;
 }
 
 .container > * {
   margin: 15px;
-}
-
-.bio {
-  grid-area: header;
-}
-
-.posts {
-  grid-area: main;
-}
-
-.tweets {
-  grid-area: sidebar;
 }

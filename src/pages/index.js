@@ -14,13 +14,13 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <div className={styles.container}>
-        <header className={styles.bio}>
+        <header>
           <BioWrapper />
         </header>
-        <section className={styles.posts}>
+        <section>
           <PostsPreview />
         </section>
-        <section className={styles.tweets}>
+        <section>
           <Tweets />
         </section>
       </div>
