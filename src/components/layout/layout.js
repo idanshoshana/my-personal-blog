@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useStaticQuery } from "gatsby";
 import styles from "./layout.module.css";
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -16,6 +16,7 @@ const Layout = ({ location, title, children }) => {
   `);
 
   const { name: authorName } = data.site.siteMetadata.author;
+  const title = `I'm ${authorName}`;
   const rootPath = `${__PATH_PREFIX__}/`;
   let header;
 
