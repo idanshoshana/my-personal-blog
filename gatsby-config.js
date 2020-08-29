@@ -3,7 +3,7 @@ module.exports = {
     title: `Idan Shoshana`,
     author: {
       name: `Idan Shoshana`,
-      summary: `I'm a Software engineer with a lot of passion! In this blog I've been sharing my knowledge and my experience.`,
+      summary: `I'm a Software engineer with a lot of passion! In this blog, I've been sharing my knowledge and experience.`,
     },
     description: `the blog of Idan Shoshana`,
     siteUrl: `https://idanshoshana.me/`,
