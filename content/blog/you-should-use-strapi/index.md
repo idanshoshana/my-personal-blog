@@ -74,17 +74,17 @@ npm run develop
 ```
 Wait a few minutes and a new tab will open. Create a new admin user:
 
-![registration](https://dev-to-uploads.s3.amazonaws.com/i/qqd2r8kq49jd7dg269ib.png)
+![registration](./registration.png)
 
 This is the admin panel:
 
-![strapi-dashboard](https://dev-to-uploads.s3.amazonaws.com/i/drgxj1um3j2iiaoavybl.png)
+![strapi-dashboard](./strapi-dashboard.png)
 
 You may say you like it! There is a lot of features you can do there. I'll focus on the main feature I want to cover, the API generation you can use later in your application.
 
 Click the `Content-Types Builder` button, and you'll get this screen:
 
-![content-types-builder](https://dev-to-uploads.s3.amazonaws.com/i/15slpa0ovjhbxna9506m.png)
+![content-types-builder](./content-types-builder.png)
 
 Now you can create `Collection Type` and `Single Type`. 
 Think about it like that: `Collection Type` is for an array with objects, and `Single Type` is for one object. For example, you might generate an array of products (`Collection Type`) and Add/Remove/Update the objects inside the array all the time. When you want to generate one object you can do it via (`Single Type`).
@@ -97,30 +97,30 @@ Let's create a proper object in Strapi in order to consume it via REST and injec
  
 Press on `Create new single type`, and fill a name:
 
-![create-a-single-type](https://dev-to-uploads.s3.amazonaws.com/i/2cqwb64ldzvhokfq50dc.png)
+![create-a-single-type](./create-a-single-type.png)
 
 > In my case, I choose the "UpdatesScreen" name
 
 Press the `Continue` button and choose your object's fields. Give them a type and a name:
 
-![types](https://dev-to-uploads.s3.amazonaws.com/i/ynp75h6pnfb4wkpmu53h.png)
+![types](./types.png)
 
 I choose "Title" (text type) and "Content" (rich text editor type) fields corresponding to my Updates Screen:
 
-![updates-screen-single-type](https://dev-to-uploads.s3.amazonaws.com/i/xjhqtc6j2j8m7f24t8m5.png)
+![updates-screen-single-type](./updates-screen.png)
 
 Click the `Save` button, your server will restart and you'll find new files on your codebase under the `api` folder. Now you can find your new single type under `Single Types` section, click on it. Feel free to edit and then click on the `Save` button:
 
-![edit-updates-screen](https://dev-to-uploads.s3.amazonaws.com/i/3f9em9w428f0lot3sio1.png)
+![edit-updates-screen](./edit-updates-screen.png)
 
 Awesome! now we want to be allowed to fetch this resource from our client.
 
 Go to `Roles & Permissions`, Click on the edit button in the Public section. Under the Permission section, click on "find" checkbox:
 
-![permissions](https://dev-to-uploads.s3.amazonaws.com/i/z5ue9yhvxkybekzirsvb.png)
+![permissions](./permissions.png)
 
 In the right side you can see the route you can go to, keep it for later:
-![route](https://dev-to-uploads.s3.amazonaws.com/i/bcdm86x0q0k6182xthzt.png)
+![route](./route.png)
 
 Then, press the `Save` button.
 Add your saved route to your base URL. The result should be:
@@ -159,6 +159,6 @@ I bounce a popup (Updates Screen) for an app's user when he needs to see new upd
 
 My clients see the data that comes from Strapi (They don't know 🤫)  and the product manager feels free to add new content without an effort of a developer!
 
-![winner](https://dev-to-uploads.s3.amazonaws.com/i/9l02fphz24mi9pkapzll.jpg) Photo by [bruce mars](https://unsplash.com/@brucemars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)
+![winner](./winner.jpg) Photo by [bruce mars](https://unsplash.com/@brucemars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)
 
 I hope you enjoyed!
