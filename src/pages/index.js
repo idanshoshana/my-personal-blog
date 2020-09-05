@@ -11,15 +11,9 @@ const BlogIndex = ({ location }) => {
     <Layout location={location}>
       <SEO title="Personal Blog" />
       <div className={styles.container}>
-        <header>
-          <BioWrapper />
-        </header>
-        <section>
-          <PostsPreview />
-        </section>
-        <section>
-          <Tweets />
-        </section>
+        <BioWrapper />
+        <PostsPreview />
+        <Tweets />
       </div>
     </Layout>
   );
