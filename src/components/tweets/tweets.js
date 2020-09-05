@@ -19,8 +19,9 @@ const Tweets = () => {
     <div className={styles.container}>
       <h2 className={styles.tweetsTitle}>Tweets </h2> <FiTwitter />
       <div className={styles.tweetsContainer}>
-        {tweets.map(tweet => (
+        {tweets.map((tweet, index) => (
           <div
+            key={index}
             className={styles.tweet}
             dangerouslySetInnerHTML={{
               __html: tweet.codeBlock,
