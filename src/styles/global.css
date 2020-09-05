@@ -7,7 +7,7 @@ html {
 
 :root {
   --background-color: #ffffff;
-  --secondary-background-color: #192734;
+  --secondary-background-color: #ffffff;
   --text-color: #000000;
   --border-color: #164a53;
   --light-theme-color: #eaeaea;
@@ -40,7 +40,6 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Montserrat", sans-serif;
-  transition: background-color .2s ease-out;
 }
 
 h1,
