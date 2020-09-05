@@ -1,0 +1,25 @@
+.dotWrapper {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.lightDot {
+  composes: dot;
+  background-color: var(--light-theme-color);
+  border: 1px solid #000000;
+}
+
+.darkDot {
+  composes: dot;
+  background-color: var(--dark-theme-color);
+  border: 1px solid #ffffff;
+}
