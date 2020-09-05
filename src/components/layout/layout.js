@@ -1,8 +1,11 @@
 import React from "react";
 import { Link, useStaticQuery } from "gatsby";
 import styles from "./layout.module.css";
+import ThemeSwitcher from "../theme-switcher/theme-switcher";
+import useLastTheme from "../../hooks/use-last-theme";
 
 const Layout = ({ location, children }) => {
+  useLastTheme();
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -37,9 +40,13 @@ const Layout = ({ location, children }) => {
       </h3>
     );
   }
+
   return (
     <div className={styles.container}>
-      <header className={styles.headerSection}>{header}</header>
+      <header className={styles.headerSection}>
+        {header}
+        <ThemeSwitcher />
+      </header>
       <main>{children}</main>
       <footer className={styles.footerSection}>
         © {new Date().getFullYear()} {authorName}

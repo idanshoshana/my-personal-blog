@@ -6,9 +6,9 @@ html {
 }
 
 :root {
-  --background-color: #15202b;
+  --background-color: #ffffff;
   --secondary-background-color: #192734;
-  --text-color: #ffffff;
+  --text-color: #000000;
   --border-color: #164a53;
   --light-theme-color: #eaeaea;
   --dark-theme-color: #15202b; 
