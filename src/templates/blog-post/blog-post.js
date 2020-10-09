@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={post.frontmatter.featuredImage.childImageSharp.fluid}
+        image={post.frontmatter.featuredImage.childImageSharp.fixed.src}
       />
       <div className={styles.container}>
         <article>
@@ -71,6 +71,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     }
   }

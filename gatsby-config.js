@@ -13,7 +13,6 @@ module.exports = {
       twitter: "idan_shoshana",
       medium: "@idanshoshana",
     },
-    defaultImage: "/images/default-image.jpg"
   },
   plugins: [
     {

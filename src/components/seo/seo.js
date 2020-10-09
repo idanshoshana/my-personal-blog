@@ -4,9 +4,16 @@ import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 const SEO = ({ description, lang, meta, title, image }) => {
-  const { site } = useStaticQuery(
+  const { site, avatar } = useStaticQuery(
     graphql`
       query {
+        avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
         site {
           siteMetadata {
             author {
@@ -14,7 +21,6 @@ const SEO = ({ description, lang, meta, title, image }) => {
             }
             title
             description
-            defaultImage
             siteUrl
             social {
               twitter
@@ -26,7 +32,7 @@ const SEO = ({ description, lang, meta, title, image }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const metaImage = image || site.siteMetadata.defaultImage;
+  const metaImage = image || avatar.childImageSharp.fixed.src;
 
   return (
     <Helmet
