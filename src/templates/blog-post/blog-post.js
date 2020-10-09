@@ -73,7 +73,7 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            fixed {
+            fixed(quality: 100) {
               src
             }
           }

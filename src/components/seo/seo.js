@@ -9,7 +9,7 @@ const SEO = ({ description, lang, meta, title, image }) => {
       query {
         avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
           childImageSharp {
-            fixed {
+            fixed(quality: 100) {
               src
             }
           }
