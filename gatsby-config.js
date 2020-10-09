@@ -6,13 +6,14 @@ module.exports = {
       summary: `I'm a Software engineer with a lot of passion! In this blog, I've been sharing my knowledge and experience.`,
     },
     description: `the blog of Idan Shoshana`,
-    siteUrl: `https://idanshoshana.me/`,
+    siteUrl: `https://idanshoshana.me`,
     social: {
       github: "idanshoshana",
       dev: "idanshoshana",
       twitter: "idan_shoshana",
       medium: "@idanshoshana",
     },
+    defaultImage: "/images/default-image.jpg"
   },
   plugins: [
     {
